@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>s2a2</title>
+	<script type="text/javascript">
+	function outer(a)
+	{
+		var inner = function(b)
+		{
+			return a*b;
+		}
+		return inner;
+	}
+	var c = new outer(3);
+	console.log(c(5));
+	</script>
+</head>
+
+<body>
+</body>
+</html>
+
